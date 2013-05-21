@@ -59,27 +59,23 @@ app.get('/scripts/controllers/main.js', function(req, res){
 	res.send(mainjs);
 });
 app.get('/styles/bootstrap.css', function(req, res){
-	res.header("Content-type", "text/javascript");
+	res.header("Content-type", "text/css");
 	res.send(bootstrapcss);
 });
 app.get('/styles/main.css', function(req, res){
-	res.header("Content-type", "text/javascript");
+	res.header("Content-type", "text/css");
 	res.send(maincss);
 });
 app.get('/views/partials/navbar.html', function(req, res){
-	res.header("Content-type", "text/javascript");
 	res.send(navbarhtml);
 });
 app.get('/views/partials/google-map.html', function(req, res){
-	res.header("Content-type", "text/javascript");
 	res.send(gmaphtml);
 });
 app.get('/views/partials/lightbar.html', function(req, res){
-	res.header("Content-type", "text/javascript");
 	res.send(lightbarhtml);
 });
 app.get('/views/main.html', function(req, res){
-	res.header("Content-type", "text/javascript");
 	res.send(mainhtml);
 });
 
