@@ -5,7 +5,7 @@ EE-opdracht HaN
 
 ### Directory Layout
 <pre><code>
-app/                				--> all of the files to be used in production client side
+client/                				--> all of the files to be used in production client side
   	components/       				--> all vendor js files
     	angular/        			--> 
     		angular.js 				--> the latest angular js
@@ -34,10 +34,12 @@ app/                				--> all of the files to be used in production client sid
 	views/							--> all the views
 		partials/ 					--> all the views that are called by ng-include
 
-db.js 								--> serverside file for the mongoose database schema's
-node_modules/						--> all node modules installed with node package manager
-	express							--> express framework
-	mongoose						--> used to interact with mongoDB
-routes/						        --> map for modules for the different routes
-server.js 							--> main node file. starts the server and defines all routes etc
+server/                             --> all of the files to be used in production server side
+    db.js 							--> serverside file for the mongoose database schema's
+    node_modules/					--> all node modules installed with node package manager
+    	express						--> express framework
+    	mongoose					--> used to interact with mongoDB
+        path                        --> module used to join the client side 
+    routes/						    --> map for modules for the different routes
+    server.js 						--> main node file. starts the server and defines all routes etc
 </pre></code>
