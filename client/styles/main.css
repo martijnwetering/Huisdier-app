@@ -1,0 +1,65 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+
+body {
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+
+#map-canvas {
+	margin:-20px 0 0 0;
+}
+
+#map-canvas img {
+	max-width: inherit;
+}
+
+.tickercontainer {
+	position: absolute;
+	bottom:1px;
+	width:100%;
+	z-index:10;
+}
+
+.tickercontainer .mask {
+	width:100%;
+}
+
+.side-menu {
+	position:absolute;
+	top:42px;
+	left:0px;
+	bottom:20px;
+	width:400px;
+	background-color:white;
+	
+}
+
+.padded {
+	padding:10px;
+}
+
+.view-leave, .view-enter {
+  webkit-transition:0.5s linear all;
+  moz-transition:0.5s linear all;
+  -o-transition:0.5s linear all;
+  transition:0.5s linear all; /* future proof */
+}
+
+.view-enter {
+  left:-400px;
+}
+
+.view-enter.view-enter-active {
+  left:0px;
+}
+
+.view-leave {
+	left:0px;
+}
+
+.view-leave.view-leave-active {
+	left:-400px;
+}
+
+
+
