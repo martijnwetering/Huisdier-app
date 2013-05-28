@@ -39,25 +39,28 @@
   
     
   </head>
-  <body ng-app="angularApp">
+  <body data-ng-app="angularApp">
 
-    <!-- nav bar -->
-    <div ng-include="'./views/partials/navbar.html'"></div>
     
-    <!-- google map div -->
-    <div id="map-canvas"></div>
+      <!-- nav bar -->
+      <div data-ng-include="'./views/partials/navbar.html'"></div>
+      
+      <!-- google map div -->
+      <div id="map-canvas"></div>
 
-   <!-- news ticker-->
-    <div ng-include="'./views/partials/newsticker.html'"></div>
-   
-    <!-- application data -->
-    <div class="container" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
+      <!-- application data -->
+      <div class="container" data-ng-view data-ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
 
-    <ul id="newsticker" class="newsticker" >
-      <li><span>10/05/2013</span><a href="#">Poes piet is zoek!</a></li>
-      <li><span>15/05/2013</span><a href="#">Kat kees is gevonden!</a></li>
-      <li><span>22/05/2013</span><a href="#">Hond Henk is in het asiel!</a></li>
-    </ul>
+      <!-- news ticker-->
+      <ul id="newsticker" class="newsticker" >
+        <li><span>10/05/2013</span><a href="#">Poes piet is zoek!</a></li>
+        <li><span>15/05/2013</span><a href="#">Kat kees is gevonden!</a></li>
+        <li><span>22/05/2013</span><a href="#">Hond Henk is in het asiel!</a></li>
+      </ul>
+
+      <div data-custum-directive> <span>bring the blink back</span> </div>
+      
+    
 
    
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -75,6 +78,7 @@
 
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/directives/directives.js"></script>
 
     <script src="scripts/plugins.js"></script>
   </body>

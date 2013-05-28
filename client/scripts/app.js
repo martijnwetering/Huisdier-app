@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularApp', ['$strap.directives'])
+angular.module('angularApp', ['$strap.directives', 'myDirectives'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -14,4 +14,7 @@ angular.module('angularApp', ['$strap.directives'])
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  
+
+
