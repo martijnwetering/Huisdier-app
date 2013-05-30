@@ -1,12 +1,26 @@
-<!-- Modal (external ./partials/modal.html or inline ng-template) -->
 <div class="modal-header">
-  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-  <h3>Login</h3>
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Login</h3>
+    <a href="#">Nog niet geregistreerd?</a>
 </div>
 <div class="modal-body">
-  <p>something</p>
+    <form class="form-horizontal">  
+        <div class="control-group">
+            <label class="control-label" for="inputUsername">Gebruikersnaam:</label>
+            <div class="controls">
+                <input class="input-medium" type="text" id="inputUsername" placeholder="Gebruikersnaam">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputPassword">Wachtwoord:</label>
+            <div class="controls">
+                <input class="input-medium" type="text" id="inputPassword" placeholder="Wachtwoord">
+            </div>
+        </div>
+    </form>
 </div>
 <div class="modal-footer">
-  <button type="button" class="btn" ng-click="hide()">Close</button>
-  <button class="btn btn-primary" ng-click="modal.saved=true;hide()">Save changes</button>
+    <button type="button" class="btn" ng-click="hide()">Annuleren</button>
+    <button class="btn btn-primary" ng-click="modal.saved=true;hide()">Login</button>
 </div>
+  

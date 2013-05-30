@@ -18,13 +18,9 @@ angular.module('angularApp')
 	    // do something
 	    dismiss();
 	  }
-
-	  $('#map-canvas').css('left', '0px');
  	})
- 	
  	.controller('SearchCtrl', function ($scope) {
-
- 		$('#map-canvas').css('left', '400px');
+ 		
  	});
 
 
